@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#xtu {
+				background-color: maroon;
+				width: 220px;
+				height: 30px;
+				margin-top: 28px;
+			}
+			
+			.tou {
+				width: 960px;
+				height: 80px;
+				background-color: white;
+				margin: 7px auto;
+			}
+			
+			.d1 {
+				width: 220px;
+				height: 80px;
+				background-color: white;
+				float: left;
+				margin-right: 60px;
+			}
+			
+			.d2 {
+				width: 400px;
+				height: 80px;
+				background-color: white;
+				float: left;
+				margin-right: 80px;
+			}
+			
+			.d3 {
+				width: 200px;
+				height: 80px;
+				background-color: white;
+				float: left;
+			}
+			
+			.dao {
+				width: 960px;
+				height: 70px;
+				margin: 0 auto;
+				background-color: white;
+			}
+			
+			ul {
+				list-style: none;
+			}
+			
+			ul li {
+				display: block;
+				float: left;
+				background-color: #1479D7;
+				width: 60px;
+				height: 50px;
+				margin: 10px auto;
+			}
+			
+			ul li a {
+				display: inline-block;
+				width: 40px;
+				height: 30px;
+				text-decoration: none;
+				color: white;
+				margin: 10px auto;
+				position: relative;
+				left: 10px;
+				text-align: center;
+			}
+			
+			a:hover {
+				background-color: whitesmoke;
+				color: #1479D7;
+				display: block;
+				width: 40px;
+				height: 30px;
+				position: relative;
+				left: -3px;
+				bottom: auto auto;
+			}
+			
+			a:active {
+				font-size: larger;
+			}
+			
+			.deb {
+				width: 960px;
+				height: 100px;
+				background-color: white;
+				margin: 15px auto 0;
+			}
+			
+			.t1 {
+				width: 540px;
+				height: 100px;
+				margin-right: 10px;
+				float: left;
+			}
+			
+			.t2 {
+				width: 350px;
+				height: 100px;
+				background-color: aliceblue;
+				margin-left: 60px;
+				float: left;
+			}
+			
+			.zib {
+				text-align: center;
+				font-size: 30px;
+				position: relative;
+				bottom: -25px;
+				font-style: italic;
+				color: cornflowerblue;
+				text-shadow: 5px 6px 7px;
+			}
+			
+			.la {
+				width: 960px;
+				height: 600px;
+				background-color: white;
+				margin: 20px auto;
+			}
+			
+			.left {
+				width: 260px;
+				height: 600px;
+				background-color: white;
+				float: left;
+			}
+			
+			.mid {
+				width: 260px;
+				height: 600px;
+				background-color: white;
+				margin-left: 20px;
+				float: left;
+			}
+			
+			.right {
+				width: 350px;
+				height: 600px;
+				background-color: white;
+				float: right;
+			}
+			
+			.n1 {
+				width: 260px;
+				height: 50px;
+				background-color: white;
+				margin-top: 4px;
+			}
+			
+			.n2 {
+				width: 260px;
+				height: 50px;
+				background-color: white;
+				margin-top: 4px;
+			}
+			
+			.nn1 {
+				width: 260 px;
+				height: 20px;
+				background-color: white;
+				border-top: 1px solid lightskyblue;
+			}
+			
+			.c1 {
+				height: 50px;
+				background-color: white;
+				float: left;
+				width: 90px;
+				border-right: 1px solid black;
+			}
+			
+			.c2 {
+				height: 50px;
+				background-color: white;
+				float: left;
+				width: 130px;
+				margin-left: 34px;
+			}
+			
+			.k1 {
+				text-decoration: none;
+				font-size: 30px;
+				font-weight: 100;
+			}
+			
+			a1:link {
+				color: #000000;
+			}
+			
+			a1:visited {
+				color: #000000;
+			}
+			
+			a1:hover {
+				color: deepskyblue;
+				border-bottom: 4px solid #00BFFF;
+				padding-bottom: 8px;
+			}
+			
+			.z1 {
+				width: 260px;
+				height: 50px;
+				background-color: white;
+			}
+			
+			.z2 {
+				width: 260px;
+				height: 50px;
+				background-color: white;
+				margin-top: 12px;
+			}
+			
+			.z3 {
+				width: 260px;
+				height: 150px;
+				background-color: white;
+				margin-top: 14px;
+			}
+			
+			.a2 {
+				text-decoration: none;
+				display: block;
+				float: left;
+				font-weight: 800;
+				font-size: larger;
+				text-align: left;
+			}
+			
+			a2:link,
+			a2:visited {
+				color: black;
+			}
+			
+			a2:hover {
+				color: #1479D7;
+			}
+			
+			a3:link,
+			a3:visited {
+				color: black;
+			}
+			
+			a3:hover {
+				color: deepskyblue;
+			}
+			
+			.z31 {
+				width: 160px;
+				height: 150px;
+				background-color: white;
+				margin-right: 10px;
+				float: left;
+				position: relative;
+			}
+			
+			.z32 {
+				width: 90px;
+				height: 150px;
+				background-color: white;
+				float: left;
+			}
+			
+			.m1 {
+				width: 89px;
+				height: 50px;
+				background-color: white;
+				float: left;
+				margin-right: 8px;
+				border-right: 1px solid black;
+				padding-right: 2px;
+			}
+			
+			.m2 {
+				width: 160px;
+				height: 50px;
+				background-color: white;
+				float: left;
+			}
+			
+			.u1 {
+				width: 100%;
+				height: 200px;
+				background-color: mediumspringgreen;
+				float: left;
+			}
+			
+			.u2 {
+				width: 100%;
+				height: 30px;
+				background-color: white;
+				float: left;
+				margin-top: 18px;
+			}
+			
+			.tao1 {
+				width: 75px;
+				height: 30px;
+				background-color: white;
+				float: left;
+				margin-right: 6px;
+				font-size: large;
+				font-weight: 300;
+				color: deepskyblue;
+				border-bottom: 3px solid deepskyblue;
+			}
+			
+			.tao2 {
+				width: 80px;
+				height: 30px;
+				background-color: white;
+				float: left;
+				border-right: 1px solid black;
+				padding-right: 2px;
+				color: #00BFFF;
+				font-size: small;
+			}
+			
+			.tao3 {
+				width: 180px;
+				height: 30px;
+				background-color: white;
+				float: left;
+				margin-left: 6px;
+				font-size: small;
+			}
+			
+			p2 {
+				position: relative;
+				bottom: 7px;
+			}
+			
+			p1 {
+				position: relative;
+				bottom: -9px;
+				right: -22px;
+			}
+			
+			#uld {
+				width: 100%;
+				height: 100%;
+				background-color: white;
+			}
+			
+			.li1 {
+				width: 100%;
+				height: 39px;
+				background-color: white;
+				position: relative;
+				top: -10px;
+				margin: 0px;
+				border: 1px solid #cae0f3;
+			}
+			
+			.li1:nth-child(2) {
+				background-color: #f5f8fc;
+			}
+			
+			.li1:nth-child(4) {
+				background-color: #f5f8fc;
+			}
+			
+			#aa {
+				color: black;
+				font-size: small;
+				float: left;
+				width: 60px;
+				height: 20px;
+				margin-left: 4px;
+				text-align: center;
+			}
+			
+			#aa:link,
+			#aa:visited {
+				color: #000000;
+			}
+			
+			#aa:hover {
+				color: #1479D7;
+				background-color: white;
+				position: relative;
+				right: -30px;
+			}
+			
+			.u3 {
+				width: 350px;
+				height: 22px;
+				margin-top: 2px;
+				background-color: white;
+				float: left;
+				border-top: 1px solid cornflowerblue;
+			}
+			
+			.u4 {
+				width: 100%;
+				height: 265px;
+				background-color: maroon;
+				float: left;
+			}
+			
+			.u5 {
+				width: 100%;
+				height: 50px;
+				background-color: white;
+				float: left;
+				margin-bottom: 0px;
+				margin-top: 10px;
+			}
+			
+			.ol {
+				display: inline-block;
+				float: left;
+				position: absolute;
+				bottom: -60px;
+				color: white;
+				font-weight: 800;
+			}
+			
+			#d2-1 {
+				width: 380px;
+				height: 30px;
+				border-radius: 35px;
+				background-color: #F3F6F8;
+				margin: 30px 10px 20px;
+				float: left;
+			}
+			
+			#intput {
+				float: left;
+				border: 0;
+				font-size: 14px;
+				line-height: 22px;
+				width: 240px;
+				height: 19px;
+				padding: 4px 10px;
+				background: none;
+				position: relative;
+				left: 20px;
+				top: 1px;
+			}
+			
+			#sou {
+				width: 80px;
+				height: 30px;
+				border-radius: 35px;
+				float: left;
+				background-color: #1479D7;
+				position: relative;
+				left: 4px;
+				border: 0px;
+				color: white;
+			}
+			
+			span {
+				display: inline-block;
+				width: 38px;
+				height: 30px;
+				position: relative;
+				left: 16px;
+				float: left;
+				background-color: #F3F6F8;
+				padding-right: 0px;
+				text-align: center;
+			}
+			
+			#d3-1 {
+				width: 200px;
+				height: 30px;
+				float: left;
+				margin-top: 30px;
+				background-color: white;
+			}
+			
+			#d3-1-1 {
+				width: 40px;
+				height: 30px;
+				background-color: white;
+				float: left;
+				margin-left: 64px;
+				background-image: -webkit-image-set(url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons.png) 1x, url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons_2x.png) 2x);
+				background-repeat: no-repeat;
+				background-position: 6px -95px;
+			}
+			
+			#xb:hover {
+				cursor: pointer;
+			}
+			
+			#d3-1-2 {
+				width: 40px;
+				height: 30px;
+				background-color: white;
+				float: left;
+				margin-left: 8px;
+				background-image: -webkit-image-set(url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons.png) 1x, url(//mat1.gtimg.com/pingjs/ext2020/qqindex2018/dist/img/icons_2x.png) 2x);
+				background-repeat: no-repeat;
+				background-position: 8px -190px;
+			}
+			
+			#d3-1-3 {
+				width: 40px;
+				height: 30px;
+				background-color: #F3F6F8;
+				float: left;
+				margin-left: 8px;
+			}
+			
+			#dl {
+				font-size: small;
+				color: #60a5e4;
+				text-decoration: none;
+			}
+			
+			#dl:hover {
+				border: 0.4px solid #60a5e4;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="tou">
+			<div class="d1">
+				<a href="#" target="_blank">
+					<img src="http://www.xtu.edu.cn/skin/default/images/logo.png" id="xtu" />
+				</a>
+			</div>
+			<div class="d2">
+				<div id="d2-1">
+					<form>
+						<span>
+							
+							网页
+						</span>
+						<input id="intput" />
+						<button id="sou">搜狗搜索</button>
+					</form>
+				</div>
+			</div>
+			<div class="d3">
+				<div id="d3-1">
+					<div id="d3-1-1">
+						<a href="https://qzone.qq.com" target="_blank" id="xb"></a>
+					</div>
+					<div id="d3-1-2"></div>
+					<div id="d3-1-3">
+						<a href="#" target="_blank" id="dl">&nbsp;&nbsp;登陆</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="dao">
+			<ul>
+				<li>
+					<a href="#" target="_blank">新闻</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">视频</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">图片</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">军事</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">体育</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">NBA</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">娱乐</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">财经</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">科技</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">时尚</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">汽车</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">房产</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">教育</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">文化</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">游戏</a>
+				</li>
+				<li>
+					<a href="#" target="_blank">星座</a>
+				</li>
+			</ul>
+		</div>
+		<div class="deb">
+			<div class="t1"><img src="img/t01c06fea0358884a8a.jpg" width="100%" height="100px" /> </div>
+			<div class="t2">
+				<p class="zib">湘大南门 </p>
+			</div>
+		</div>
+		<div class="la">
+			<div class="left">
+				<div class="n1">
+					<div class="c1">
+						<a1 href="#" target="_blank" id="k1" class="k1">要闻</a1>
+					</div>
+					<div class="c2">
+						<a1 href="#" target="_blank" id="k1" class="k1">湖南新闻</a1>
+					</div>
+				</div>
+				<div class="nn1"></div>
+				<div class="z1">
+					<a2 href="#" target="_blank" id="a2" class="a2">习近平：支持妇女建功立业 实现人生理想和梦想 </a2>
+				</div>
+				<div class="z2">
+					<a3 href="#" target="_blank" id="a3" class="a3">习近平出席首届中国国际出口博览会开幕式 </a3>
+				</div>
+				<div class="z2">
+					<a3 href="#" target="_blank" id="a3" class="a3">习近平同马克龙互致电 庆祝中法海洋卫星发射成功</a3>
+				</div>
+				<div class="z2">
+					<a3 href="#" target="_blank" id="a3" class="a3">湖南再添两处省级地质公园</a3>
+				</div>
+				<div class="z2">
+					<a3 href="#" target="_blank" id="a3" class="a3">第一家合资企业北京航食：努力做成百年老字号</a3>
+				</div>
+				<div class="z3">
+
+					<div class="z31">
+						<a href="http://news.xtu.edu.cn/html/zonghexw/show_11096.html" target="_blank">
+							<img src="img/3b3062769e7aca500a870ef1554bc511.jpg" width="160px" height="150px" />
+						</a>
+					</div>
+					<div class="z32">
+						<a3 href="http://news.xtu.edu.cn/html/zonghexw/show_11096.html" target="_blank" id="a3" class="a3">军训总结表彰大会：浩然书生气 沙场秋点兵</a3>
+					</div>
+				</div>
+				<div class="z2">
+					<a3 href="#" target="_blank" id="a3" class="a3">天津和平区：绵延底蕴 续写繁华</a3>
+				</div>
+
+			</div>
+			<div class="mid">
+				<div class="n2">
+					<div class="c3">
+						<a1 href="#" target="_blank" id="k1" class="k1">今日话题</a1>
+					</div>
+				</div>
+				<div class="nn1"></div>
+				<div class="z1">
+					<a2 href="#" target="_blank" id="a2" class="a2">“高清无码图”曝光猥琐男，合适吗？ </a2>
+				</div>
+				<div class="z2">
+					<div class="m1">
+						<a2 href="#" target="_blank" id="a2" class="a2">新京报评论 </a2>
+					</div>
+					<div class="m2">
+						<a3 href="#" target="_blank" id="a3" class="a3">重庆公交车坠江，围攻“女司机”跑偏了</a3>
+
+					</div>
+				</div>
+				<div class="z2">
+					<div class="m1">
+						<a2 href="#" target="_blank" id="a2" class="a2">冰点周刊</a2>
+					</div>
+					<div class="m2">
+						<a3 href="#" target="_blank" id="a3" class="a3">“碰瓷”的历史：最早是古玩市场的讹诈手段</a3>
+					</div>
+				</div>
+				<div class="z2">
+					<div class="m1">
+						<a2 href="#" target="_blank" id="a2" class="a2">棱镜</a2>
+					</div>
+					<div class="m2">
+						<a3 href="#" target="_blank" id="a3" class="a3">股权质押拆雷时刻：一场杠杆转移的冒险之旅</a3>
+					</div>
+				</div>
+				<div class="z2">
+					<div class="m1">
+						<a2 href="#" target="_blank" id="a2" class="a2">谷雨</a2>
+					</div>
+					<div class="m2">
+						<a3 href="#" target="_blank" id="a3" class="a3">中国娃娃轰炸现场痛哭 镜头揭露战争梦魇</a3>
+					</div>
+				</div>
+				<div class="z3">
+					<div class="z31">
+						<a href="http://www.xtu.edu.cn/kxyj/keyantuandui/2018-10-23/5752.html" target="_blank">
+							<img src="img/b1dbd8b9f98716ef806cc9e06c99c20d.jpg" width="160px" height="150px" />
+						</a>
+					</div>
+					<div class="z32">
+						<a3 href="http://www.xtu.edu.cn/kxyj/keyantuandui/2018-10-23/5752.html" target="_blank" id="a3" class="a3">湘潭大学图书情报与档案管理科研团队</a3>
+					</div>
+				</div>
+				<div class="z2">
+					<div class="m1">
+						<a2 href="#" target="_blank" id="a2" class="a2">短史记 </a2>
+					</div>
+					<div class="m2">
+						<a3 href="#" target="_blank" id="a3" class="a3">花园口决堤，造成了多少民众死亡？</a3>
+					</div>
+				</div>
+
+			</div>
+			<div class="right">
+				<div class="u1">
+					<ul id="uld">
+						<li class="li1">
+							<a href="#" target="_blank" id="aa">新闻App</a>
+							<a href="#" target="_blank" id="aa">体育App</a>
+							<a href="#" target="_blank" id="aa">企鹅号</a>
+							<a href="#" target="_blank" id="aa">快报</a>
+							<a href="#" target="_blank" id="aa">微视</a>
+
+						</li>
+						<li class="li1">
+							<a href="#" target="_blank" id="aa">新闻App</a>
+							<a href="#" target="_blank" id="aa">体育App</a>
+							<a href="#" target="_blank" id="aa">企鹅号</a>
+							<a href="#" target="_blank" id="aa">快报</a>
+							<a href="#" target="_blank" id="aa">微视</a>
+
+						</li>
+						<li class="li1">
+							<a href="#" target="_blank" id="aa">新闻App</a>
+							<a href="#" target="_blank" id="aa">体育App</a>
+							<a href="#" target="_blank" id="aa">企鹅号</a>
+							<a href="#" target="_blank" id="aa">快报</a>
+							<a href="#" target="_blank" id="aa">微视</a>
+
+						</li>
+						<li class="li1">
+							<a href="#" target="_blank" id="aa">新闻App</a>
+							<a href="#" target="_blank" id="aa">体育App</a>
+							<a href="#" target="_blank" id="aa">企鹅号</a>
+							<a href="#" target="_blank" id="aa">快报</a>
+							<a href="#" target="_blank" id="aa">微视</a>
+
+						</li>
+						<li class="li1">
+							<a href="#" target="_blank" id="aa">新闻App</a>
+							<a href="#" target="_blank" id="aa">体育App</a>
+							<a href="#" target="_blank" id="aa">企鹅号</a>
+							<a href="#" target="_blank" id="aa">快报</a>
+							<a href="#" target="_blank" id="aa">微视</a>
+
+						</li>
+					</ul>
+				</div>
+				<div class="u2">
+					<div class="tao1">热点赛事</div>
+					<div class="tao2">
+						<p1>
+							11月2号
+						</p1>
+					</div>
+					<div class="tao3">
+						<a3 href="#" target="_blank" class="a3"><br />
+							<p2>
+								下午好，今天有22场比赛！
+							</p2>
+						</a3>
+					</div>
+				</div>
+				<div class="u3"></div>
+				<div class="u4">
+					<a href="https://v.qq.com/x/cover/3j5sndp0i6atop6/u0028v825a9.html" target="_blank">
+						<img src="//img1.gtimg.com/ninja/2/2018/10/ninja154090707062556.jpg" width="350px" height="265px" />
+					</a>
+					<span class="ol">&nbsp;&nbsp;&nbsp;&nbsp;易建联正式加冕“万分先生”  成CBA第二人</span>
+				</div>
+				<div class="u5">
+					<a3 href="#" target="_blank" id="a3" class="a3">金庸小说中最为经典的八场战役：见证着一代大侠的成长</a3>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

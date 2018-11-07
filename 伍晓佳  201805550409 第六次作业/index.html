@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			.tou {
+				width: 1060px;
+				background-color: /*mediumspringgreen*/;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				margin: 0 auto;
+			}
+			
+			.row1 {
+				width: 250px;
+				height: 300px;
+				/*border: 1px solid black;*/
+				margin-right: 10px;
+			}
+			
+			.row1 img {
+				width: 250px;
+				height: 300px;
+			}
+			
+			.row2 {
+				width: 250px;
+				height: 300px;
+			}
+			
+			.row2 img {
+				width: 250px;
+				height: 300px;
+			}
+			
+			@media only screen and (min-width: 960px) and (max-width: 100000px) {
+				.tou {
+					flex-wrap: nowrap;
+				}
+			}
+			
+			@media only screen and (min-width: 768px) and (max-width: 960px) {
+				.row1,
+				.row2 {
+					flex-basis: 25%;
+				}
+			}
+			
+			@media only screen and (min-width: 600px) and (max-width: 768px) {
+				.row1,
+				.row2 {
+					flex-basis: 33%;
+				}
+			}
+			
+			@media only screen and (min-width: 1px) and (max-width: 600px) {
+				.row1,
+				.row2 {
+					flex-basis: 90%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="tou">
+			<div class="row1">
+				<img src="img/t0106b9a55b9f97036e.jpg" />
+			</div>
+			<div class="row1">
+				<img src="img/t0117d180a52f66bd5f.jpg" />
+			</div>
+			<div class="row1">
+				<img src="img/t01681831d179e64c22.jpg" />
+			</div>
+			<div class="row2">
+				<img src="img/t01a6cca6324e23e50b.jpg" />
+			</div>
+		</div>
+	</body>
+
+</html>
